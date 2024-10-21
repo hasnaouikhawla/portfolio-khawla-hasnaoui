@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Hasnaoui Khawla</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+
+</head>
+<body>
+
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Khawla Hasnaoui</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hamburger Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">Khawla Hasnaoui</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="profileImg">
+            <img id="profile-pic" src="assets/ProfilePicture.jpeg" alt="Khawla Hasnaouiprofile picture">
+        </div>
+        <!-- Modal Section -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImg">
+        </div>
+        <div class="profile-description">
+            <p class="hello">
+                Hello, I'm
+            </p>
+            <h1 class="profile-name">
+                Khawla Hasnaoui
+            </h1>
+            <p class="description-1">
+                <span class="exper">Engineer in Geoinformation</span> and a passionate <span class="exper">Full Stack Developer</span>. I specialize in the <span class="exper">development of web and mobile applications</span> with a focus on <span class="exper">WebGIS solutions and Geographic Information Systems (GIS)</span>.
+            </p>
+            <div class="btns">
+                <button class="btn btn-color-1" onclick="window.open('./assets/CV_hasnaoui_khawla.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div class="socials">
+                <i class="fab fa-linkedin icon" onclick="window.location.href='https://www.linkedin.com/in/khawla-hasnaoui'"></i>
+
+                <i class="fab fa-github icon" onclick="window.location.href='https://github.com/hasnaouikhawla'"></i> 
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script> <!-- Script should load after the content -->
+</body>
+</html>
