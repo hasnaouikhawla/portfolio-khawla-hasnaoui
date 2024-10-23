@@ -364,7 +364,7 @@ html {
 }
 
 .experience-item:hover, .education-item:hover {
-  color: #ff6f61; /* Change text color on hover */
+  color: #000000; /* Change text color on hover */
   transform: translateX(10px); /* Artistic movement on hover */
 }
 
